@@ -42,7 +42,7 @@ build {
   post-processor "docker-tag" {
     repository = "jenkins"
     tags       = ["jenkins_v1.0"]
-    only       = ["docker.jenkins"]
+    only       = ["docker.ubuntu"]
   }
 }
 

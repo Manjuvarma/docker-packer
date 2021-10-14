@@ -30,8 +30,8 @@ build {
   ]
   provisioner "shell" {
     inline = [
-      type = "shell",
-      script = "slave_setup.sh",
+      type = shell
+      script = "slave_setup.sh"
 
     ]
   }

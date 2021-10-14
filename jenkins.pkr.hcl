@@ -26,7 +26,7 @@ source "docker" "jenkins" {
 build {
   name = "jenkins"
   sources = [
-    "source.docker.ubuntu",
+    "source.docker.jenkins",
   ]
   provisioner "shell" {
     inline = [

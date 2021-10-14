@@ -11,7 +11,7 @@ packer {
 
 variable "docker_image" {
   type    = string
-  default = "ubuntucore/jenkins-ubuntu"
+  default = "jenkins/ssh-agent"
 }
 
 
@@ -30,7 +30,7 @@ build {
   ]
   provisioner "shell" {
     inline = [
-      "pwd",
+      "sudo apt-get update",
 
     ]
   }

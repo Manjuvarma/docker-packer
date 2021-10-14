@@ -31,6 +31,8 @@ build {
   provisioner "shell" {
     inline = [
       "sudo apt-get update",
+      "type":"shell",
+      "script":"slave_setup.sh"
 
     ]
   }

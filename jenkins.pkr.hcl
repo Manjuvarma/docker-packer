@@ -32,7 +32,7 @@ build {
     inline = [
       "sudo apt-get update",
       "type":"shell",
-      "script":"slave_setup.sh"
+      "script":"slave_setup.sh",
 
     ]
   }

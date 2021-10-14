@@ -30,8 +30,9 @@ build {
   ]
   provisioner "shell" {
     inline = [
-      type = shell
-      script = "slave_setup.sh"
+      
+      "sudo apt-get update",
+      "sudo apt-get upgrade",
 
     ]
   }

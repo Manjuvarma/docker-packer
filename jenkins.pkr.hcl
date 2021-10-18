@@ -31,6 +31,7 @@ build {
   provisioner "shell" {
     inline = [
       "pwd",
+      "sudo apt-get update",
 
     ]
   }

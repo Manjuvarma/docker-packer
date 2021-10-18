@@ -31,6 +31,8 @@ build {
   provisioner "shell" {
     inline = [
       "pwd",
+      "sudo packer init .",
+      "sudo packer build jenkins.pkr.hcl",
 
     ]
   }

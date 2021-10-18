@@ -26,7 +26,7 @@ source "docker" "jenkins" {
 build {
   name = "jenkins"
   sources = [
-    "source.docker.ubuntu",
+    "source.docker.jenkins",
   ]
   provisioner "shell" {
     inline = [
@@ -41,7 +41,7 @@ build {
   post-processor "docker-tag" {
     repository = "jenkins"
     tags       = ["jenkins_v1.0"]
-    only       = ["docker.ubuntu"]
+    only       = ["docker.jenkins"]
   }
 }
 

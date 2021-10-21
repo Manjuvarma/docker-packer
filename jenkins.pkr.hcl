@@ -11,7 +11,7 @@ packer {
 
 variable "docker_image" {
   type    = string
-  default = "jenkinsci/jenkins"
+  default = "jenkins/ssh-agent"
 }
 
 

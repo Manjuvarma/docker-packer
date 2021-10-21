@@ -11,7 +11,7 @@ packer {
 
 variable "docker_image" {
   type    = string
-  default = "jenkins/jenkins:lts-jdk11"
+  default = "jenkinsci/jenkins"
 }
 
 

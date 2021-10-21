@@ -11,7 +11,7 @@ packer {
 
 variable "docker_image" {
   type    = string
-  default = "jenkins/ssh-agent"
+  default = "jenkins/jenkins:lts-jdk11"
 }
 
 
